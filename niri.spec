@@ -8,7 +8,7 @@ URL:            https://github.com/YaLTeR/niri
 Source0:        %{url}/archive/v%{version}/%{name}-%{version}.tar.gz
 Source1:        %{url}/releases/download/v%{version}/niri-%{version}-vendored-dependencies.tar.xz
 Source2:        cargo_config
-#BuildRequires:  cargo-packaging
+BuildRequires:  rust-packaging
 BuildRequires:  clang
 BuildRequires:  pango-devel
 BuildRequires:  pipewire-devel
@@ -49,7 +49,7 @@ mkdir .cargo
 cp %{SOURCE2} .cargo/config
 
 %build
-%{cargo_build}
+%cargo_build
 
 %install
 install -Dm755 -t %{buildroot}%{_bindir} target/release/%{name} 
