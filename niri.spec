@@ -45,8 +45,9 @@ Opening a new window never causes existing windows to resize.
 
 %prep
 %autosetup -a1 -p1
-mkdir .cargo
-cp %{SOURCE2} .cargo/config
+%cargo_prep
+sed -i -e 's,source.crates-io,sources.rust-sucks,g' .cargo/config.toml
+cat %{SOURCE2} >>.cargo/config.toml
 
 %build
 %cargo_build
