@@ -11,7 +11,7 @@ Source2:        cargo_config
 BuildRequires:  rust-packaging
 BuildRequires:  clang
 BuildRequires:  pango-devel
-BuildRequires:  pipewire-devel
+BuildRequires:  pkgconfig(libpipewire-0.3)
 BuildRequires:  pkgconfig
 BuildRequires:  rust >= 1.70.0
 BuildRequires:  wayland-devel
