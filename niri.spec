@@ -17,6 +17,7 @@ BuildRequires:  rust >= 1.70.0
 BuildRequires:  wayland-devel
 BuildRequires:  pkgconfig(dbus-1)
 BuildRequires:  pkgconfig(cairo-gobject)
+BuildRequires:  pkgconfig(pangocairo)
 BuildRequires:  pkgconfig(gbm)
 BuildRequires:  pkgconfig(libinput)
 BuildRequires:  pkgconfig(libseat)
