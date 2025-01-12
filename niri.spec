@@ -1,4 +1,4 @@
-%bcond_without test
+%bcond_with test
 Name:           niri
 Version:        25.01
 Release:        1
