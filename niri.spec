@@ -1,6 +1,6 @@
 %bcond_with test
 Name:           niri
-Version:        25.05
+Version:        25.05.1
 Release:        1
 Summary:        Scrollable-tiling Wayland compositor
 License:        GPL-3.0-or-later
@@ -38,6 +38,10 @@ Recommends:     swaylock
 Recommends:     swaybg
 Recommends:     mako
 Recommends:     xwayland-run
+
+# Niri by deflaut at launch trying to spawn waybar. Lets add it as recommended (per upstream request).
+# This can be configured to other packages.
+Recommends:     waybar
 
 %description
 A scrollable-tiling Wayland compositor.
