@@ -1,6 +1,6 @@
 %bcond_with test
 Name:           niri
-Version:        25.05.1
+Version:        25.08
 Release:        1
 Summary:        Scrollable-tiling Wayland compositor
 License:        GPL-3.0-or-later
@@ -59,7 +59,7 @@ cat %{SOURCE2} >>.cargo/config.toml
 %cargo_build
 
 %install
-install -Dm755 -t %{buildroot}%{_bindir} target/release/%{name} 
+install -Dm755 -t %{buildroot}%{_bindir} target/release/%{name}
 install -Dm755 -t %{buildroot}%{_bindir} resources/niri-session
 install -Dm644 -t %{buildroot}%{_datadir}/wayland-sessions resources/niri.desktop
 install -Dm644 -t %{buildroot}%{_datadir}/xdg-desktop-portal resources/niri-portals.conf
