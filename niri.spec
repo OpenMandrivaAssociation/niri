@@ -1,7 +1,7 @@
 %bcond_with test
 Name:           niri
 Version:        25.08
-Release:        1
+Release:        2
 Summary:        Scrollable-tiling Wayland compositor
 License:        GPL-3.0-or-later
 URL:            https://github.com/YaLTeR/niri
