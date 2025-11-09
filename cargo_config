@@ -1,8 +1,14 @@
+
 [source.crates-io]
 replace-with = "vendored-sources"
 
 [source."git+https://github.com/Smithay/smithay.git"]
 git = "https://github.com/Smithay/smithay.git"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/Smithay/smithay.git?rev=fb50c9a2d2d94c1db9d8954beda3716f7fbc2c04"]
+git = "https://github.com/Smithay/smithay.git"
+rev = "fb50c9a2d2d94c1db9d8954beda3716f7fbc2c04"
 replace-with = "vendored-sources"
 
 [source."git+https://gitlab.freedesktop.org/pipewire/pipewire-rs.git"]

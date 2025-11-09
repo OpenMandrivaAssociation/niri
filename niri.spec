@@ -6,8 +6,12 @@ Summary:        Scrollable-tiling Wayland compositor
 License:        GPL-3.0-or-later
 URL:            https://github.com/YaLTeR/niri
 Source0:        %{url}/archive/v%{version}/%{name}-%{version}.tar.gz
-Source1:        %{url}/releases/download/v%{version}/niri-%{version}-vendored-dependencies.tar.xz
+#Source1:        %{url}/releases/download/v%{version}/niri-%{version}-vendored-dependencies.tar.xz
 Source2:        cargo_config
+# Fix libdisplay info
+Source1:	niri-%{version}-vendor.tar.gz
+Patch0:		https://gitlab.archlinux.org/archlinux/packaging/packages/niri/-/raw/main/update_to_libdisplay-info_3.patch?ref_type=heads&inline=false#/update_to_libdisplay-info_3.patch
+
 BuildRequires:  rust-packaging
 BuildRequires:  clang
 BuildRequires:  pango-devel
