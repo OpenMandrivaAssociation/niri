@@ -1,4 +1,3 @@
 sources:
-  niri-25.08.tar.gz: efb1ef8f25e8398e21ee577687794bfc89bf90ce
-  niri-25.08-vendored-dependencies.tar.xz: 77e67092adaaf2bcae71611cde6df06e3bf7ca53
-  niri-25.08-vendor.tar.gz: 116bbc8da74976e4ca51922b24134e3aa0e24efd
+  niri-25.11.tar.gz: 568d76c86d3d44fcba8f86c1647f50b3c5ed8229
+  niri-25.11-vendored-dependencies.tar.xz: bec44f89f3aada7fade31ad101a0b6baf67efc2d
