@@ -1,3 +1,4 @@
+%global _disable_lto 1
 %bcond_with test
 Name:           niri
 Version:        26.04
