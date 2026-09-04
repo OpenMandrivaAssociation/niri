@@ -62,6 +62,7 @@ cat %{SOURCE2} >>.cargo/config.toml
 # as of niri 26.04 rust 1.97.1 and llvm 23.1.0-rc1.
 # Disable LTO because error rustc-LLVM ERROR: expected function definition _RNvCslvstGAdgBpu_7___rustc12___rust_alloc to have an associated value info.
 export RUSTFLAGS="-C lto=off"
+export CARGO_PROFILE_RELEASE_LTO=off
 %cargo_build
 
 target/rpm/niri completions bash > niri.bash
